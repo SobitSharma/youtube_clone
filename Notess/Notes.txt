@@ -1,0 +1,5 @@
+-- Use app.use() when we wanr to use the middleware only then 
+
+In simple terms, cookies-parser in Express is a middleware that 
+helps you parse and access the cookies sent by the client
+ (the user's web browser) in your Express application.

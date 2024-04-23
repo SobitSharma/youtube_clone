@@ -3,3 +3,13 @@
 In simple terms, cookies-parser in Express is a middleware that 
 helps you parse and access the cookies sent by the client
  (the user's web browser) in your Express application.
+
+ Bson Data
+ DataBase Design System
+ System Design , Cloudinary
+
+mongoose-aggregate-pagination-v2
+(For Aggregation Pipelines)
+
+Bcrypt - for hasing the passwords we are using it
+Jsonwebtoken

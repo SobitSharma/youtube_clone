@@ -1,5 +1,5 @@
 // require('dotenv').config({path:'./env'})
-// It will work but it is making the code inconsietnt
+// It will work but it is making the code inconsistent
 
 import dotenv from 'dotenv'
 import connectDB from './db/index.js'
@@ -9,13 +9,15 @@ dotenv.config({
     path:'./env'
 })   
 
+const Port = process.env.PORT || 5000
 connectDB().
 then(()=>{
-    app.listen(process.env.PORT || 8000, () => {
-        console.log(`Server is running at port : ${process.env.PORT}`)
+    app.listen(Port, () => {
+        console.log(`Server is running at port : ${Port}`)
     })
 }) 
-.catch(()=>{
+.catch((error)=>{
+    console.log(error)
     console.log('MongoDB Connection Failed')
 })
 
